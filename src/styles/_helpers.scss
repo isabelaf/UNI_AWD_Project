@@ -1,0 +1,24 @@
+.list-icon {
+  @extend .m-2;
+  font-size: $font-size-lg;
+  transition: opacity $transition-time;
+}
+
+.bold-text {
+    font-weight: 500;
+}
+
+.hover-scale {
+  cursor: pointer;
+  transition: transform $transition-time;
+}
+  
+@media (hover: hover) {
+  .list-icon:hover {
+    opacity: $hover-opacity;
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.5);
+  }
+}

@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col-sm-6 col-12">
+    <div class="px-3 pb-3">
+      <img class="img-fluid" src="./assets/data/photo.JPG">
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-12" *ngIf="details.about && details.contact">
+    <div id="details-accordion">
+      <div class="card card-theme">
+        <div class="card-header card-header-theme" id="about">
+          <h5 class="mb-0">
+            <button class="btn-theme" data-toggle="collapse" data-target="#collapseAbout" aria-expanded="false" aria-controls="collapseAbout">
+              About
+            </button>
+          </h5>
+        </div>
+        <div id="collapseAbout" class="collapse" aria-labelledby="about" data-parent="#details-accordion">
+          <div class="card-body card-body-theme">
+              <div><span class="bold-text">Name: </span>{{details.about.name}}</div>
+              <div><span class="bold-text">Occupation: </span>{{details.about.occupation}}</div>
+              <br />
+              <div [innerHtml]="details.about.text"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-theme">
+        <div class="card-header card-header-theme" id="contact">
+          <h5 class="mb-0">
+            <button class="btn-theme" data-toggle="collapse" data-target="#collapseContact" aria-expanded="false" aria-controls="collapseContact">
+              Contact
+            </button>
+          </h5>
+        </div>
+        <div id="collapseContact" class="collapse" aria-labelledby="contact" data-parent="#details-accordion">
+          <div class="card-body card-body-theme">
+            You can find me on:<br />
+            <a *ngFor="let sm of details.contact.socialMedia" target="_blank" href="{{sm.url}}" class="text-decoration-none">
+              <i class="{{sm.iconClass}} contact-icon list-icon hover-scale" data-toggle="tooltip" title="{{sm.tooltip}}"></i>
+            </a>
+            <br />
+            You can also find me here:<br />
+            <a *ngFor="let a of details.contact.address" target="_blank" href="{{a}}" class="text-decoration-none">
+              <i class="fas fa-map-marker-alt contact-icon list-icon map-pin"></i>
+            </a>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>

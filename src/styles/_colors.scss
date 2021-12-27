@@ -1,0 +1,19 @@
+$theme-color-dark: $gray-900;
+$theme-color-light: $gray-400;
+$theme-color-element: rgba($white, .5);
+
+$theme-text-dark: $gray-900;
+$theme-text-light: $white;
+
+$theme-link: #003e80;
+$theme-link-hover: hover-color($theme-link);
+
+$navbar-theme-bg: $theme-color-dark;
+$navbar-theme-hover: hover-color($white);
+$navbar-theme-active: $white;
+$navbar-theme-brand: $white;
+$navbar-theme-element: $theme-color-element;
+
+$btn-primary-theme-bg: $theme-color-dark;
+$btn-primary-theme-text: $theme-color-light;
+$btn-primary-theme-bg-hover: hover-color($btn-primary-theme-bg);

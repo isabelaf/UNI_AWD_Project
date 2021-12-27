@@ -1,0 +1,24 @@
+{
+  "about": {
+    "name": "Fitero Isabela",
+    "occupation": "Computer Science Assistant Professor at Babes-Bolyai University of Cluj-Napoca",
+    "text": "Hello! This is my university teacher webpage, on which I will post details of interest for my students regarding the topics that I teach."
+  },
+  "contact": {
+    "socialMedia": [
+      {
+        "url": "https://www.linkedin.com/in/isabela-fitero",
+        "iconClass": "fab fa-linkedin",
+        "tooltip": "LinkedIn"
+      },
+      {
+        "url": "mailto:isabela.fitero@stud.ubbcluj.ro",
+        "iconClass": "fas fa-envelope",
+        "tooltip": "UBB Mail"
+      }
+    ],
+    "address": [
+      "https://www.google.ro/maps/place/Faculty+of+Mathematics+and+Informatics/@46.7729812,23.6185134,17z/data=!3m1!4b1!4m5!3m4!1s0x47490c1598cac537:0x7df0763362ecc9ae!8m2!3d46.7729812!4d23.6207021?hl=en"
+    ]
+  }
+}
