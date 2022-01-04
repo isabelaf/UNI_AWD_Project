@@ -13,7 +13,8 @@
             <div *ngFor="let announcement of announcements.reverse()" class="card">
                 <div class="card-body">
                     <h5 class="card-title">{{announcement.title}}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">{{announcement.date | date : 'EEEE, MMMM d, y - HH:mm'}}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">{{announcement.date | date : 'EEEE, MMMM d, y - HH:mm'}}
+                    </h6>
                     <div class="card-text">
                         <div [innerHtml]="announcement.text"></div>
                     </div>
@@ -21,4 +22,4 @@
             </div>
         </div>
     </div>
-  </div>
+</div>

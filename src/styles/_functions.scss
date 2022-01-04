@@ -1,7 +1,7 @@
 @function hover-color($color) {
-  @return rgba($color, $hover-opacity);
+    @return rgba($color, $hover-opacity);
 }
 
 @function get-icon($icn-name) {
-  @return url("../assets/icons/" + $icn-name);
+    @return url("../assets/icons/" + $icn-name);
 }

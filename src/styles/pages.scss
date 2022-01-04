@@ -1,53 +1,53 @@
 app-about {
-  .contact-icon {
-    color: $theme-color-dark;
-  }
-
-  .social-media-icon {
-      @extend .contact-icon;
-      @extend .list-icon;
-      @extend .hover-opacity;
-      @extend .hover-scale;
-  }
-
-  .map-pin {
-    @extend .contact-icon;
-    @extend .list-icon;
-    @extend .hover-opacity;
-    transition: transform $transition-time;
-  }
-
-  @media (hover: hover) {
-    .map-pin:hover {
-      transform: rotate(360deg);
+    .contact-icon {
+        color: $theme-color-dark;
     }
-  }
+
+    .social-media-icon {
+        @extend .contact-icon;
+        @extend .list-icon;
+        @extend .hover-opacity;
+        @extend .hover-scale;
+    }
+
+    .map-pin {
+        @extend .contact-icon;
+        @extend .list-icon;
+        @extend .hover-opacity;
+        transition: transform $transition-time;
+    }
+
+    @media (hover: hover) {
+        .map-pin:hover {
+            transform: rotate(360deg);
+        }
+    }
 }
 
 app-portofolio {
-  .pdf-viewer-container {
-    max-height: 90vh;
-    overflow-y: auto;
-    width: 70%;
-    margin-left: 15%;
-  }
-
-  pdf-viewer {
-    display: block;
-  }
-
-  @include media-breakpoint-down(lg) {
     .pdf-viewer-container {
-      width: 100%;
-      margin-left: 0;
+        max-height: 90vh;
+        overflow-y: auto;
+        width: 70%;
+        margin-left: 15%;
     }
-  }
+
+    pdf-viewer {
+        display: block;
+    }
+
+    @include media-breakpoint-down(lg) {
+        .pdf-viewer-container {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
 }
 
 app-empty-page {
-  .empty-page-container > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    .empty-page-container > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

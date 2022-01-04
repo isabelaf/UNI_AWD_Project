@@ -10,7 +10,7 @@ import { Details } from '../models/details.model';
 export class AboutComponent implements OnInit {
   details: Details = new Details();
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
     this.dataService.getDetails().subscribe(

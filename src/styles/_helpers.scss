@@ -9,7 +9,7 @@
 
 .list-icon {
     @extend .icon;
-  @extend .m-2;
+    @extend .m-2;
 }
 
 .bold-text {
@@ -21,16 +21,16 @@
 }
 
 .hover-scale {
-  cursor: pointer;
-  transition: transform $transition-time;
+    cursor: pointer;
+    transition: transform $transition-time;
 }
-  
-@media (hover: hover) {
-  .hover-opacity:hover {
-    opacity: $hover-opacity;
-  }
 
-  .hover-scale:hover {
-    transform: scale(1.5);
-  }
+@media (hover: hover) {
+    .hover-opacity:hover {
+        opacity: $hover-opacity;
+    }
+
+    .hover-scale:hover {
+        transform: scale(1.5);
+    }
 }

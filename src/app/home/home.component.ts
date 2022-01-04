@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   generalInformation: GeneralInformation = new GeneralInformation();
   announcements: Announcement[] = [];
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
     this.dataService.getGeneralInformation().subscribe(

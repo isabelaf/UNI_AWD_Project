@@ -1,34 +1,34 @@
 {
-  "about": {
-    "name": "Fitero Isabela-Alexandra",
-    "occupations": [
-			"Lecturer (Department of Computer Science) at Babes-Bolyai University, Cluj-Napoca, Romania",
-			"Full-Stack Software Developer at Qubiz"
-    ],
-    "text": "Hello!<br /><br />Name's Isabela, and I am currently a Lecturer at BBU of Cluj-Napoca, and also a full-stack software developer.<br />Besides computer science, my hobbies include cleaning and organazing stuff (yes, really!), gardening, and I've also recently developed an interest for baking (but I am still learning).<br />I am a cat person, and I love chilly and cloudy weather.<br /><br />This is my university teacher webpage. Here I will post useful information for my students regarding the subjects that I teach."
-  },
-  "contact": {
-		"email": "isabela.fitero [at] stud.ubbcluj.ro",
-    "socialMedia": [
-      {
-        "url": "https://www.linkedin.com/in/isabela-fitero",
-        "iconClass": "fab fa-linkedin",
-        "tooltip": "LinkedIn"
-      },
-      {
-      	"url": "https://github.com/isabelaf",
-      	"iconClass": "fab fa-github",
-      	"tooltip": "GitHub"
-    	}
-    ],
-		"officeAddress": {
-			"label": "58-60 Teodor Mihali Street, Room 404",
-			"link": "https://www.google.ro/maps/place/Faculty+of+Mathematics+and+Informatics/@46.7729812,23.6185134,17z/data=!3m1!4b1!4m5!3m4!1s0x47490c1598cac537:0x7df0763362ecc9ae!8m2!3d46.7729812!4d23.6207021?hl=en"
-		},
-    "address": [
-      "https://www.google.com/maps/place/Isabela+Island,+Ecuador/@-0.4401097,-91.18721,9z/data=!4m2!3m1!1s0x9aab62c5ee008911:0x608b574da68123e5",
-      "https://www.google.com/maps/place/Isabela,+Puerto+Rico/@18.4456606,-67.0131726,12z/data=!3m1!4b1!4m2!3m1!1s0x8c02955bd66a651b:0x7c505c4987546705",
-      "https://www.google.com/maps/place/Rio+Isabela,+Santo+Domingo,+Dominican+Republic/@18.5170993,-69.9311816,15z/data=!4m2!3m1!1s0x8eaf8973328a86c9:0x6cef50e3cca9485e"
-    ]
-  }
+    "about": {
+        "name": "Fitero Isabela-Alexandra",
+        "occupations": [
+            "Lecturer (Department of Computer Science) at Babes-Bolyai University, Cluj-Napoca, Romania",
+            "Full-Stack Software Developer at Qubiz"
+        ],
+        "text": "Hello!<br /><br />Name's Isabela, and I am currently a Lecturer at BBU of Cluj-Napoca, and also a full-stack software developer.<br />Besides computer science, my hobbies include cleaning and organazing stuff (yes, really!), gardening, and I've also recently developed an interest for baking (but I am still learning).<br />I am a cat person, and I love chilly and cloudy weather.<br /><br />This is my university teacher webpage. Here I will post useful information for my students regarding the subjects that I teach."
+    },
+    "contact": {
+        "email": "isabela.fitero [at] stud.ubbcluj.ro",
+        "socialMedia": [
+            {
+                "url": "https://www.linkedin.com/in/isabela-fitero",
+                "iconClass": "fab fa-linkedin",
+                "tooltip": "LinkedIn"
+            },
+            {
+                "url": "https://github.com/isabelaf",
+                "iconClass": "fab fa-github",
+                "tooltip": "GitHub"
+            }
+        ],
+        "officeAddress": {
+            "label": "58-60 Teodor Mihali Street, Room 404",
+            "link": "https://www.google.ro/maps/place/Faculty+of+Mathematics+and+Informatics/@46.7729812,23.6185134,17z/data=!3m1!4b1!4m5!3m4!1s0x47490c1598cac537:0x7df0763362ecc9ae!8m2!3d46.7729812!4d23.6207021?hl=en"
+        },
+        "address": [
+            "https://www.google.com/maps/place/Isabela+Island,+Ecuador/@-0.4401097,-91.18721,9z/data=!4m2!3m1!1s0x9aab62c5ee008911:0x608b574da68123e5",
+            "https://www.google.com/maps/place/Isabela,+Puerto+Rico/@18.4456606,-67.0131726,12z/data=!3m1!4b1!4m2!3m1!1s0x8c02955bd66a651b:0x7c505c4987546705",
+            "https://www.google.com/maps/place/Rio+Isabela,+Santo+Domingo,+Dominican+Republic/@18.5170993,-69.9311816,15z/data=!4m2!3m1!1s0x8eaf8973328a86c9:0x6cef50e3cca9485e"
+        ]
+    }
 }

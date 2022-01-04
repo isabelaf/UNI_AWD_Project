@@ -11,7 +11,7 @@ import { Subject } from '../models/subject.model';
 export class TeachingSubjectComponent implements OnInit {
   subject: Subject = new Subject();
 
-  constructor(private dataService: DataService, private route: ActivatedRoute) {}
+  constructor(private dataService: DataService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     const subjectCode = this.route.snapshot.paramMap.get('code');

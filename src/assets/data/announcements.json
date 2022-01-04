@@ -1,12 +1,12 @@
 [
-	{
-		"title": "Welcome!",
+    {
+        "title": "Welcome!",
         "date": "2021-10-01T06:00:00Z",
-		"text": "Welcome to the Object Oriented Programming webpage!"
-	},
-	{
-		"title": "Join MSTeams",
+        "text": "Welcome to the Object Oriented Programming webpage!"
+    },
+    {
+        "title": "Join MSTeams",
         "date": "2021-10-01T10:00:00Z",
-		"text": "Please join the OOP team on MSTeams (code: <a href=\"https://teams.microsoft.com/\" target=\"_blank\">oopmst5</a>)."
-	}
+        "text": "Please join the OOP team on MSTeams (code: <a href=\"https://teams.microsoft.com/\" target=\"_blank\">oopmst5</a>)."
+    }
 ]
