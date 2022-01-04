@@ -1,6 +1,6 @@
 export class DetailsAbout {
   name: string;
-  occupation: string;
+  occupations: string[];
   text: string;
 }
 
@@ -10,8 +10,15 @@ export class DetailsSocialMedia {
   tooltip: string;
 }
 
+export class DetailsOfficeAddress {
+  label: string;
+  link: string;
+}
+
 export class DetailsContact {
+  email: string;
   socialMedia: DetailsSocialMedia[];
+  officeAddress: DetailsOfficeAddress;
   address: string[];
 }
 

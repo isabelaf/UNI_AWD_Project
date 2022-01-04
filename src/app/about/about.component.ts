@@ -16,12 +16,7 @@ export class AboutComponent implements OnInit {
     this.dataService.getDetails().subscribe(
       details => {
         this.details = details;
-        this.formatAboutText();
       }
     );
-  }
-
-  private formatAboutText(): void {
-    this.details.about.text = this.details.about.text.replace(/\r\n/g, '<br>');
   }
 }
