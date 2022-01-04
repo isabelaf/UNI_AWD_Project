@@ -5,6 +5,7 @@ import { EmptyPageComponent } from './empty-page/empty-page.component';
 import { AboutComponent } from './about/about.component';
 import { PortofolioComponent } from './portofolio/portofolio.component';
 import { HomeComponent } from './home/home.component';
+import { TeachingSubjectComponent } from './teaching-subject/teaching-subject.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,11 @@ const routes: Routes = [
     path: 'portofolio',
     component: PortofolioComponent,
     data: { title: 'Portofolio' }
+  },
+  {
+    path: 'subject/:code',
+    component: TeachingSubjectComponent,
+    data: { title: 'Teaching' }
   },
   {
     path: '**',

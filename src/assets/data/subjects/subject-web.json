@@ -1,0 +1,188 @@
+{
+    "name": "Web Programming",
+    "specializations": [
+        "Computer Science (English)"
+    ],
+    "year": "I",
+    "semester": "2nd",
+    "lectHours": 2,
+    "semHours": 1,
+    "labHours": 1,
+    "requirements": [
+        "90% laboratory attendance (5 out of 7)",
+        "75% seminary attendance (5 out of 7)",
+        "You will receive 1 point penalty / week for delivering assignments past the deadline. After 3 weeks, you will no longer be allowed to deliver the assignment.",
+        "In order to pass, the <span class=\"bold-text\">L</span> grade must be &ge; 5 and the <span class=\"bold-text\">G</span> grade must be &ge; 4,5."
+    ],
+    "grading": "<ul><li>laboratory grade (<span class=\"bold-text\">L</span>)<ul><li>assignments: 10%, 30%, 60%</li><li>bonus work (<span class=\"bold-text\">LB</span>)</li></ul></li><li>practical exam (<span class=\"bold-text\">PE</span>)</li><li>seminar activity (<span class=\"bold-text\">SB</span>): &le; 0.5 p</li></ul><p class=\"bold-text\">Final grade formula:</p><span class=\"bold-text\">G</span> &equals; 0.4 &times; <span class=\"bold-text\">L</span> &plus; 0.6 &times; <span class=\"bold-text\">PE</span> &plus; <span class=\"bold-text\">LB</span> &plus; <span class=\"bold-text\">SB</span>",
+    "lectures": [
+        {
+            "name": "Lecture 1",
+            "src": "/assets/data/subjects/web/LectureX.pdf"
+        },
+        {
+            "name": "Lecture 2",
+            "src": "/assets/data/subjects/web/LectureX.pdf"
+        },
+        {
+            "name": "Lecture 3",
+            "src": "/assets/data/subjects/web/LectureX.pdf"
+        },
+        {
+            "name": "Lecture 4",
+            "src": "/assets/data/subjects/web/LectureX.pdf"
+        },
+        {
+            "name": "Lecture 5",
+            "src": "/assets/data/subjects/web/LectureX.pdf"
+        },
+        {
+            "name": "Lecture 6",
+            "src": "/assets/data/subjects/web/LectureX.pdf"
+        },
+        {
+            "name": "Lecture 7",
+            "src": "/assets/data/subjects/web/LectureX.pdf"
+        },
+        {
+            "name": "Lecture 8",
+            "src": "/assets/data/subjects/web/LectureX.pdf"
+        },
+        {
+            "name": "Lecture 9",
+            "src": "/assets/data/subjects/web/LectureX.pdf"
+        },
+        {
+            "name": "Lecture 10",
+            "src": "/assets/data/subjects/web/LectureX.pdf"
+        },
+        {
+            "name": "Lecture 11",
+            "src": "/assets/data/subjects/web/LectureX.pdf"
+        },
+        {
+            "name": "Lecture 12",
+            "src": "/assets/data/subjects/web/LectureX.pdf"
+        },
+        {
+            "name": "Lecture 13",
+            "src": "/assets/data/subjects/web/LectureX.pdf"
+        },
+        {
+            "name": "Lecture 14",
+            "src": "/assets/data/subjects/web/LectureX.pdf"
+        }
+    ],
+    "seminars": [
+        {
+            "name": "Seminar 1",
+            "src": "/assets/data/subjects/web/SeminarX.pdf",
+            "resources": [
+                {
+                    "name": "Resource_1",
+                    "src": "/assets/data/subjects/web/SeminarX_Resource.zip"
+                },
+                {
+                    "name": "Resource_2",
+                    "src": "/assets/data/subjects/web/SeminarX_Resource.zip"
+                }
+            ]
+        },
+        {
+            "name": "Seminar 2",
+            "src": "/assets/data/subjects/web/SeminarX.pdf",
+            "resources": [
+                {
+                    "name": "Resource_1",
+                    "src": "/assets/data/subjects/web/SeminarX_Resource.zip"
+                }
+            ]
+        },
+        {
+            "name": "Seminar 3",
+            "src": "/assets/data/subjects/web/SeminarX.pdf"
+        },
+        {
+            "name": "Seminar 4",
+            "src": "/assets/data/subjects/web/SeminarX.pdf"
+        },
+        {
+            "name": "Seminar 5",
+            "src": "/assets/data/subjects/web/SeminarX.pdf"
+        },
+        {
+            "name": "Seminar 6",
+            "src": "/assets/data/subjects/web/SeminarX.pdf"
+        },
+        {
+            "name": "Seminar 7",
+            "src": "/assets/data/subjects/web/SeminarX.pdf"
+        }
+    ],
+    "laboratories": [
+        {
+            "name": "Laboratory 1",
+            "src": "/assets/data/subjects/oop/LaboratoryX.pdf",
+            "resources": [
+                {
+                    "name": "Resource_1",
+                    "src": "/assets/data/subjects/oop/LaboratoryX_Resource.zip"
+                },
+                {
+                    "name": "Resource_2",
+                    "src": "/assets/data/subjects/oop/LaboratoryX_Resource.zip"
+                }
+            ]
+        },
+        {
+            "name": "Laboratory 2",
+            "src": "/assets/data/subjects/oop/LaboratoryX.pdf",
+            "resources": [
+                {
+                    "name": "Resource_1",
+                    "src": "/assets/data/subjects/oop/LaboratoryX_Resource.zip"
+                }
+            ]
+        },
+        {
+            "name": "Laboratory 3",
+            "src": "/assets/data/subjects/oop/LaboratoryX.pdf"
+        },
+        {
+            "name": "Laboratory 4",
+            "src": "/assets/data/subjects/oop/LaboratoryX.pdf"
+        },
+        {
+            "name": "Laboratory 5",
+            "src": "/assets/data/subjects/oop/LaboratoryX.pdf"
+        },
+        {
+            "name": "Laboratory 6",
+            "src": "/assets/data/subjects/oop/LaboratoryX.pdf"
+        },
+        {
+            "name": "Laboratory 7",
+            "src": "/assets/data/subjects/oop/LaboratoryX.pdf"
+        }
+    ],
+    "exams": [
+        {
+            "date": "2021-01-16T22:00:00Z",
+            "groups": [
+                "911",
+                "913",
+                "915"
+            ],
+            "times": "<span class=\"bold-text\">Practical exam: </span>08:00 - 14:00"
+        },
+        {
+            "date": "2021-01-23T22:00:00Z",
+            "groups": [
+                "912",
+                "914",
+                "916"
+            ],
+            "times": "<span class=\"bold-text\">Practical exam: </span>08:00 - 14:00"
+        }
+    ]
+}

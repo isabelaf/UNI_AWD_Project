@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Announcement } from '../models/announcement';
-import { GeneralInformation } from '../models/general-information';
+import { Announcement } from '../models/announcement.model';
+import { GeneralInformation } from '../models/general-information.model';
 import { DataService } from '../services/data.service';
 
 @Component({

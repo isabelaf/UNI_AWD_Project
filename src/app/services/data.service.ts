@@ -3,8 +3,9 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { Details } from '../models/details.model';
-import { GeneralInformation } from '../models/general-information';
-import { Announcement } from '../models/announcement';
+import { GeneralInformation } from '../models/general-information.model';
+import { Announcement } from '../models/announcement.model';
+import { Subject } from '../models/subject.model';
 
 @Injectable()
 export class DataService {
@@ -21,5 +22,9 @@ export class DataService {
 
   getAnnouncements(): Observable<Announcement[]> {
     return this.httpClient.get<Announcement[]>('assets/data/announcements.json');
+  }
+
+  getSubject(code: string): Observable<Subject> {
+    return this.httpClient.get<Subject>('assets/data/subjects/subject-' + code + '.json');
   }
 }

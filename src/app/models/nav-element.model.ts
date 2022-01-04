@@ -1,4 +1,5 @@
 export class NavElement {
-  path: string;
+  path?: string;
   name: string;
+  children?: NavElement[];
 }

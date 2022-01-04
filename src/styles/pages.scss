@@ -1,10 +1,19 @@
 app-about {
   .contact-icon {
-    font-size: $font-size-ex-lg;
     color: $theme-color-dark;
   }
 
+  .social-media-icon {
+      @extend .contact-icon;
+      @extend .list-icon;
+      @extend .hover-opacity;
+      @extend .hover-scale;
+  }
+
   .map-pin {
+    @extend .contact-icon;
+    @extend .list-icon;
+    @extend .hover-opacity;
     transition: transform $transition-time;
   }
 

@@ -8,8 +8,18 @@
 
     <div class="collapse navbar-collapse" id="navbarElements">
       <ul class="navbar-nav ml-auto">
-        <li *ngFor="let e of navElements" class="nav-item">
-          <a class="nav-link" routerLink="{{e.path}}" routerLinkActive="active">{{e.name}}</a>
+        <li *ngFor="let e of navElements" class="nav-item" [ngClass]="{ 'dropdown': e.children }">
+          <div *ngIf="!e.children">
+            <a class="nav-link" routerLink="{{e.path}}" routerLinkActive="active">{{e.name}}</a>
+          </div>
+          <div *ngIf="e.children">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{e.name}}
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a *ngFor="let c of e.children" class="nav-link" routerLink="{{c.path}}" routerLinkActive="active">{{c.name}}</a>
+              </div>
+          </div>
         </li>
       </ul>
     </div>

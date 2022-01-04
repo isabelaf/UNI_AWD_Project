@@ -1,11 +1,23 @@
+.icon {
+    font-size: $font-size-ex-lg;
+}
+
+.text-icon {
+    @extend .icon;
+    @extend .mr-3;
+}
+
 .list-icon {
+    @extend .icon;
   @extend .m-2;
-  font-size: $font-size-lg;
-  transition: opacity $transition-time;
 }
 
 .bold-text {
     font-weight: 500;
+}
+
+.hover-opacity {
+    transition: opacity $transition-time;
 }
 
 .hover-scale {
@@ -14,7 +26,7 @@
 }
   
 @media (hover: hover) {
-  .list-icon:hover {
+  .hover-opacity:hover {
     opacity: $hover-opacity;
   }
 

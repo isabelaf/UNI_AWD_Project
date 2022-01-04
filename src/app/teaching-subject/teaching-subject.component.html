@@ -1,0 +1,146 @@
+<div class="row">
+    <div class="col-sm-12 col-12">
+        <div id="subject-accordion">
+          <div class="card card-theme">
+            <div class="card-header card-header-theme" id="about">
+              <h5 class="mb-0">
+                <button class="btn-theme" aria-expanded="true">
+                    <i class="fas fa-info text-icon"></i>General Information
+                </button>
+              </h5>
+            </div>
+            <div class="show" data-parent="#subject-accordion">
+              <div class="card-body card-body-theme">
+                <div>
+                    <div><span class="bold-text">Name: </span>{{subject.name}}</div>
+                    <div>
+                        <span class="bold-text">Specializations: </span>
+                        <span *ngFor="let s of subject.specializations; let last = last">{{s}}<span *ngIf="!last">, </span></span>
+                    </div>
+                    <div><span class="bold-text">Year of study: </span>{{subject.year}} ({{subject.semester}} semester)</div>
+
+                    <br />
+
+                    <div><span class="bold-text">Lecture: </span>{{subject.lectHours}} hour(s) / week</div>
+                    <div><span class="bold-text">Seminar: </span>{{subject.semHours}} hour(s) / week</div>
+                    <div><span class="bold-text">Laboratory: </span>{{subject.labHours}} hour(s) / week</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-theme">
+            <div class="card-header card-header-theme" id="contact">
+              <h5 class="mb-0">
+                <button class="btn-theme" aria-expanded="true">
+                    <i class="fas fa-clipboard-list text-icon"></i>Requirements
+                </button>
+              </h5>
+            </div>
+            <div class="show" data-parent="#subject-accordion">
+              <div class="card-body card-body-theme">
+                <ul>
+                    <li *ngFor="let r of subject.requirements" [innerHtml]="r"></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="card card-theme">
+            <div class="card-header card-header-theme" id="contact">
+              <h5 class="mb-0">
+                <button class="btn-theme" aria-expanded="true">
+                    <i class="fas fa-medal text-icon"></i>Grading
+                </button>
+              </h5>
+            </div>
+            <div class="show" data-parent="#subject-accordion">
+              <div class="card-body card-body-theme">
+                <div [innerHtml]="subject.grading"></div>
+              </div>
+            </div>
+        </div>
+        <div class="card card-theme">
+            <div class="card-header card-header-theme" id="contact">
+              <h5 class="mb-0">
+                <button class="btn-theme" aria-expanded="true">
+                    <i class="fas fa-chalkboard text-icon"></i>Lectures & seminars
+                </button>
+              </h5>
+            </div>
+            <div class="show" data-parent="#subject-accordion">
+              <div class="card-body card-body-theme">
+                  <div class="row">
+                      <div class="col-sm-6 col-12">
+                        <ul>
+                            <li *ngFor="let l of subject.lectures">
+                                <a href="{{l.src}}" download>{{l.name}}</a>
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-6 col-12">
+                        <ul>
+                            <li *ngFor="let s of subject.seminars">
+                                <a href="{{s.src}}" download>{{s.name}}</a>
+                                <div *ngIf="s.resources">
+                                    Resources: <span *ngFor="let r of s.resources; let last = last"><a href="{{r.src}}" download>{{r.name}}</a><span *ngIf="!last">, </span></span>
+                                </div>
+                            </li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="card card-theme">
+            <div class="card-header card-header-theme" id="contact">
+              <h5 class="mb-0">
+                <button class="btn-theme" aria-expanded="true">
+                    <i class="fas fa-laptop-code text-icon"></i>Laboratories
+                </button>
+              </h5>
+            </div>
+            <div class="show" data-parent="#subject-accordion">
+              <div class="card-body card-body-theme">
+                    <div class="row" *ngFor="let l of subject.laboratories">
+                        <div class="col-md-3 col-sm-6 col-12">
+                          <ul>
+                              <li>
+                                  <a href="{{l.src}}" download>{{l.name}}</a>
+                              </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-9 col-sm-6 col-12">
+                            <ul *ngIf="l.resources">
+                                <li>
+                                    Resources: <span *ngFor="let r of l.resources; let last = last"><a href="{{r.src}}" download>{{r.name}}</a><span *ngIf="!last">, </span></span>
+                                </li>
+                            </ul>
+                          </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div class="card card-theme">
+            <div class="card-header card-header-theme" id="contact">
+              <h5 class="mb-0">
+                <button class="btn-theme" aria-expanded="true">
+                    <i class="fas fa-file-signature text-icon"></i>Exam
+                </button>
+              </h5>
+            </div>
+            <div class="show" data-parent="#subject-accordion">
+              <div class="card-body card-body-theme">
+                <ul>
+                    <li *ngFor="let e of subject.exams">
+                        <span class="text-danger bold-text">{{e.date | date: 'EEEE, MMMM d, y'}}</span>
+                        <br />
+                        <span class="bold-text">Groups: </span><span *ngFor="let g of e.groups; let last = last">{{g}}<span *ngIf="!last">, </span></span>
+                        <br />
+                        <span [innerHtml]="e.times"></span>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+</div>

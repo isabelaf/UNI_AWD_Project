@@ -28,7 +28,7 @@
                   <span class="bold-text">CV: </span>
                   <span>
                     <a href="/portofolio">
-                        <i class="fas fa-external-link-alt list-icon hover-scale"></i>
+                        <i class="fas fa-external-link-alt social-media-icon"></i>
                     </a>
                   </span>
               </div>
@@ -48,24 +48,24 @@
         <div id="collapseContact" class="collapse" aria-labelledby="contact" data-parent="#details-accordion">
           <div class="card-body card-body-theme">
             <div>
-                <i class="fas fa-envelope contact-icon list-icon hover-scale" data-toggle="tooltip" title="Email"></i>
+                <i class="fas fa-envelope social-media-icon" data-toggle="tooltip" title="Email"></i>
                 {{details.contact.email}}
             </div>
             <div>
                 <a target="_blank" href="{{details.contact.officeAddress.link}}" class="text-decoration-none">
-                    <i class="fas fa-map-marker-alt contact-icon list-icon map-pin"></i>
+                    <i class="fas fa-map-marker-alt map-pin"></i>
                 </a>
                 {{details.contact.officeAddress.label}}
             </div>
             <br />
             You can find me on:<br />
             <a *ngFor="let sm of details.contact.socialMedia" target="_blank" href="{{sm.url}}" class="text-decoration-none">
-              <i class="{{sm.iconClass}} contact-icon list-icon hover-scale" data-toggle="tooltip" title="{{sm.tooltip}}"></i>
+              <i class="{{sm.iconClass}} social-media-icon" data-toggle="tooltip" title="{{sm.tooltip}}"></i>
             </a>
             <br />
             You can also find me here:<br />
             <a *ngFor="let a of details.contact.address" target="_blank" href="{{a}}" class="text-decoration-none">
-              <i class="fas fa-map-marker-alt contact-icon list-icon map-pin"></i>
+              <i class="fas fa-map-marker-alt map-pin"></i>
             </a>
           </div>
         </div>
