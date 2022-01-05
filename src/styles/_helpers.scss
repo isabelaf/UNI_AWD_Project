@@ -2,17 +2,17 @@
     font-size: $font-size-ex-lg;
 }
 
-.text-icon {
+.icon-in-text {
     @extend .icon;
     @extend .mr-3;
 }
 
-.list-icon {
+.icon-in-list {
     @extend .icon;
     @extend .m-2;
 }
 
-.bold-text {
+.text-bold {
     font-weight: 500;
 }
 

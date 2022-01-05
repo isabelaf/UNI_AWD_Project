@@ -9,10 +9,16 @@ export class SubjectMaterial {
   resources?: SubjectResource[];
 }
 
+export class SubjectExamTime {
+  name: string;
+  startTime: Date;
+  endTime: Date;
+}
+
 export class SubjectExam {
   date: Date;
   groups: string[];
-  times: string;
+  times: SubjectExamTime[];
 }
 
 export class Subject {

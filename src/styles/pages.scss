@@ -5,14 +5,14 @@ app-about {
 
     .social-media-icon {
         @extend .contact-icon;
-        @extend .list-icon;
+        @extend .icon-in-list;
         @extend .hover-opacity;
         @extend .hover-scale;
     }
 
     .map-pin {
         @extend .contact-icon;
-        @extend .list-icon;
+        @extend .icon-in-list;
         @extend .hover-opacity;
         transition: transform $transition-time;
     }

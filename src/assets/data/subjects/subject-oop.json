@@ -13,9 +13,9 @@
         "90% laboratory attendance (12 out of 14)",
         "75% seminary attendance (5 out of 7)",
         "You will receive 1 point penalty / week for delivering assignments past the deadline. After 3 weeks, you will no longer be allowed to deliver the assignment.",
-        "In order to pass, the <span class=\"bold-text\">L</span> grade must be &ge; 5 and the <span class=\"bold-text\">G</span> grade must be &ge; 4,5."
+        "In order to pass, the <span class=\"text-bold\">L</span> grade must be &ge; 5 and the <span class=\"text-bold\">G</span> grade must be &ge; 4,5."
     ],
-    "grading": "<ul><li>laboratory grade (<span class=\"bold-text\">L</span>)<ul><li>50% assignments</li><li>50% (20% + 30%) 2 practical tests</li><li>bonus work (<span class=\"bold-text\">LB</span>)</li></ul></li><li>written exam (<span class=\"bold-text\">WE</span>)</li><li>practical exam (<span class=\"bold-text\">PE</span>)</li><li>seminar activity (<span class=\"bold-text\">SB</span>): &le; 0.5 p</li></ul><p class=\"bold-text\">Final grade formula:</p><span class=\"bold-text\">G</span> &equals; 0.3 &times; <span class=\"bold-text\">L</span> &plus; 0.3 &times; <span class=\"bold-text\">PE</span> &plus; 0.4 &times; <span class=\"bold-text\">WE</span> &plus; <span class=\"bold-text\">LB</span> &plus; <span class=\"bold-text\">SB</span>",
+    "grading": "<ul><li>laboratory grade (<span class=\"text-bold\">L</span>)<ul><li>50% assignments</li><li>50% (20% + 30%) 2 practical tests</li><li>bonus work (<span class=\"text-bold\">LB</span>)</li></ul></li><li>written exam (<span class=\"text-bold\">WE</span>)</li><li>practical exam (<span class=\"text-bold\">PE</span>)</li><li>seminar activity (<span class=\"text-bold\">SB</span>): &le; 0.5 p</li></ul><p class=\"text-bold\">Final grade formula:</p><span class=\"text-bold\">G</span> &equals; 0.3 &times; <span class=\"text-bold\">L</span> &plus; 0.3 &times; <span class=\"text-bold\">PE</span> &plus; 0.4 &times; <span class=\"text-bold\">WE</span> &plus; <span class=\"text-bold\">LB</span> &plus; <span class=\"text-bold\">SB</span>",
     "lectures": [
         {
             "name": "Lecture 1",
@@ -219,7 +219,18 @@
                 "915",
                 "721"
             ],
-            "times": "<span class=\"bold-text\">Written exam: </span>08:00 - 10:00<br /><span class=\"bold-text\">Practical exam: </span> 10:30 - 13:30"
+            "times": [
+                {
+                    "name": "Written exam",
+                    "startTime": "2021-01-17T06:00:00Z",
+                    "endTime": "2021-01-17T08:00:00Z"
+                },
+                {
+                    "name": "Practical exam",
+                    "startTime": "2021-01-17T08:30:00Z",
+                    "endTime": "2021-01-17T11:30:00Z"
+                }
+            ]
         },
         {
             "date": "2021-01-23T22:00:00Z",
@@ -229,7 +240,18 @@
                 "916",
                 "722"
             ],
-            "times": "<span class=\"bold-text\">Written exam: </span>08:00 - 10:00<br /><span class=\"bold-text\">Practical exam: </span> 10:30 - 13:30"
+            "times": [
+                {
+                    "name": "Written exam",
+                    "startTime": "2021-01-24T06:00:00Z",
+                    "endTime": "2021-01-24T08:00:00Z"
+                },
+                {
+                    "name": "Practical exam",
+                    "startTime": "2021-01-24T08:30:00Z",
+                    "endTime": "2021-01-24T11:30:00Z"
+                }
+            ]
         }
     ]
 }

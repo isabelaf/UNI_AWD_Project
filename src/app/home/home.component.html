@@ -1,13 +1,5 @@
 <div class="row">
     <div class="col-12">
-        <div class="mb-3">
-            <h1>General information</h1>
-            <div>
-                <div><span class="bold-text">Subject: </span>{{generalInformation.subject}}</div>
-                <div><span class="bold-text">Specialization: </span>{{generalInformation.specialization}}</div>
-                <div><span class="bold-text">Year of study: </span>{{generalInformation.yearOfStudy}}</div>
-            </div>
-        </div>
         <div>
             <h1>Announcements</h1>
             <div *ngFor="let announcement of announcements.reverse()" class="card">

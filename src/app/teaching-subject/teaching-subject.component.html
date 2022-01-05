@@ -5,27 +5,27 @@
                 <div class="card-header card-header-theme" id="about">
                     <h5 class="mb-0">
                         <button class="btn-theme" aria-expanded="true">
-                            <i class="fas fa-info text-icon"></i>General Information
+                            <i class="fas fa-info icon-in-text"></i>General Information
                         </button>
                     </h5>
                 </div>
                 <div class="show" data-parent="#subject-accordion">
                     <div class="card-body card-body-theme">
                         <div>
-                            <div><span class="bold-text">Name: </span>{{subject.name}}</div>
+                            <div><span class="text-bold">Name: </span>{{subject.name}}</div>
                             <div>
-                                <span class="bold-text">Specializations: </span>
+                                <span class="text-bold">Specializations: </span>
                                 <span *ngFor="let s of subject.specializations; let last = last">{{s}}<span
                                         *ngIf="!last">, </span></span>
                             </div>
-                            <div><span class="bold-text">Year of study: </span>{{subject.year}} ({{subject.semester}}
+                            <div><span class="text-bold">Year of study: </span>{{subject.year}} ({{subject.semester}}
                                 semester)</div>
 
                             <br />
 
-                            <div><span class="bold-text">Lecture: </span>{{subject.lectHours}} hour(s) / week</div>
-                            <div><span class="bold-text">Seminar: </span>{{subject.semHours}} hour(s) / week</div>
-                            <div><span class="bold-text">Laboratory: </span>{{subject.labHours}} hour(s) / week</div>
+                            <div><span class="text-bold">Lecture: </span>{{subject.lectHours}} hour(s) / week</div>
+                            <div><span class="text-bold">Seminar: </span>{{subject.semHours}} hour(s) / week</div>
+                            <div><span class="text-bold">Laboratory: </span>{{subject.labHours}} hour(s) / week</div>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                 <div class="card-header card-header-theme" id="contact">
                     <h5 class="mb-0">
                         <button class="btn-theme" aria-expanded="true">
-                            <i class="fas fa-clipboard-list text-icon"></i>Requirements
+                            <i class="fas fa-clipboard-list icon-in-text"></i>Requirements
                         </button>
                     </h5>
                 </div>
@@ -50,7 +50,7 @@
                 <div class="card-header card-header-theme" id="contact">
                     <h5 class="mb-0">
                         <button class="btn-theme" aria-expanded="true">
-                            <i class="fas fa-medal text-icon"></i>Grading
+                            <i class="fas fa-medal icon-in-text"></i>Grading
                         </button>
                     </h5>
                 </div>
@@ -64,7 +64,7 @@
                 <div class="card-header card-header-theme" id="contact">
                     <h5 class="mb-0">
                         <button class="btn-theme" aria-expanded="true">
-                            <i class="fas fa-chalkboard text-icon"></i>Lectures & seminars
+                            <i class="fas fa-chalkboard icon-in-text"></i>Lectures & seminars
                         </button>
                     </h5>
                 </div>
@@ -98,7 +98,7 @@
                 <div class="card-header card-header-theme" id="contact">
                     <h5 class="mb-0">
                         <button class="btn-theme" aria-expanded="true">
-                            <i class="fas fa-laptop-code text-icon"></i>Laboratories
+                            <i class="fas fa-laptop-code icon-in-text"></i>Laboratories
                         </button>
                     </h5>
                 </div>
@@ -129,7 +129,7 @@
                 <div class="card-header card-header-theme" id="contact">
                     <h5 class="mb-0">
                         <button class="btn-theme" aria-expanded="true">
-                            <i class="fas fa-file-signature text-icon"></i>Exam
+                            <i class="fas fa-file-signature icon-in-text"></i>Exam
                         </button>
                     </h5>
                 </div>
@@ -137,13 +137,16 @@
                     <div class="card-body card-body-theme">
                         <ul>
                             <li *ngFor="let e of subject.exams">
-                                <span class="text-danger bold-text">{{e.date | date: 'EEEE, MMMM d, y'}}</span>
+                                <span class="text-danger text-bold">{{e.date | date: AppConstants.dateFormat}}</span>
                                 <br />
-                                <span class="bold-text">Groups: </span><span
+                                <span class="text-bold">Groups: </span><span
                                     *ngFor="let g of e.groups; let last = last">{{g}}<span *ngIf="!last">,
                                     </span></span>
                                 <br />
-                                <span [innerHtml]="e.times"></span>
+                                <span *ngFor="let t of e.times">
+                                    <span class="text-bold">{{t.name}}: </span>{{t.startTime | date: AppConstants.timeFormat}} - {{t.endTime | date: AppConstants.timeFormat}}
+                                    <br />
+                                </span>
                             </li>
                         </ul>
                     </div>

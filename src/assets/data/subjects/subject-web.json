@@ -12,9 +12,9 @@
         "90% laboratory attendance (5 out of 7)",
         "75% seminary attendance (5 out of 7)",
         "You will receive 1 point penalty / week for delivering assignments past the deadline. After 3 weeks, you will no longer be allowed to deliver the assignment.",
-        "In order to pass, the <span class=\"bold-text\">L</span> grade must be &ge; 5 and the <span class=\"bold-text\">G</span> grade must be &ge; 4,5."
+        "In order to pass, the <span class=\"text-bold\">L</span> grade must be &ge; 5 and the <span class=\"text-bold\">G</span> grade must be &ge; 4,5."
     ],
-    "grading": "<ul><li>laboratory grade (<span class=\"bold-text\">L</span>)<ul><li>assignments: 10%, 30%, 60%</li><li>bonus work (<span class=\"bold-text\">LB</span>)</li></ul></li><li>practical exam (<span class=\"bold-text\">PE</span>)</li><li>seminar activity (<span class=\"bold-text\">SB</span>): &le; 0.5 p</li></ul><p class=\"bold-text\">Final grade formula:</p><span class=\"bold-text\">G</span> &equals; 0.4 &times; <span class=\"bold-text\">L</span> &plus; 0.6 &times; <span class=\"bold-text\">PE</span> &plus; <span class=\"bold-text\">LB</span> &plus; <span class=\"bold-text\">SB</span>",
+    "grading": "<ul><li>laboratory grade (<span class=\"text-bold\">L</span>)<ul><li>assignments: 10%, 30%, 60%</li><li>bonus work (<span class=\"text-bold\">LB</span>)</li></ul></li><li>practical exam (<span class=\"text-bold\">PE</span>)</li><li>seminar activity (<span class=\"text-bold\">SB</span>): &le; 0.5 p</li></ul><p class=\"text-bold\">Final grade formula:</p><span class=\"text-bold\">G</span> &equals; 0.4 &times; <span class=\"text-bold\">L</span> &plus; 0.6 &times; <span class=\"text-bold\">PE</span> &plus; <span class=\"text-bold\">LB</span> &plus; <span class=\"text-bold\">SB</span>",
     "lectures": [
         {
             "name": "Lecture 1",
@@ -167,22 +167,34 @@
     ],
     "exams": [
         {
-            "date": "2021-01-16T22:00:00Z",
+            "date": "2021-01-17T22:00:00Z",
             "groups": [
                 "911",
                 "913",
                 "915"
             ],
-            "times": "<span class=\"bold-text\">Practical exam: </span>08:00 - 14:00"
+            "times": [
+                {
+                    "name": "Practical exam",
+                    "startTime": "2021-01-18T06:00:00Z",
+                    "endTime": "2021-01-18T12:00:00Z"
+                }
+            ]
         },
         {
-            "date": "2021-01-23T22:00:00Z",
+            "date": "2021-01-24T22:00:00Z",
             "groups": [
                 "912",
                 "914",
                 "916"
             ],
-            "times": "<span class=\"bold-text\">Practical exam: </span>08:00 - 14:00"
+            "times": [
+                {
+                    "name": "Practical exam",
+                    "startTime": "2021-01-25T06:00:00Z",
+                    "endTime": "2021-01-25T12:00:00Z"
+                }
+            ]
         }
     ]
 }

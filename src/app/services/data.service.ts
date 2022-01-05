@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { Details } from '../models/details.model';
-import { GeneralInformation } from '../models/general-information.model';
 import { Announcement } from '../models/announcement.model';
 import { Subject } from '../models/subject.model';
 
@@ -14,10 +13,6 @@ export class DataService {
 
   getDetails(): Observable<Details> {
     return this.httpClient.get<Details>('assets/data/details.json');
-  }
-
-  getGeneralInformation(): Observable<GeneralInformation> {
-    return this.httpClient.get<GeneralInformation>('assets/data/general-information.json');
   }
 
   getAnnouncements(): Observable<Announcement[]> {
