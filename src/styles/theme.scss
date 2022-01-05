@@ -30,6 +30,8 @@ ul {
     background-color: $navbar-theme-bg;
 
     .navbar-brand {
+        font-size: $font-size-ex-lg;
+        font-family: 'Dancing Script', cursive;
         color: $navbar-theme-brand;
 
         &:hover {

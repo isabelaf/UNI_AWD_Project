@@ -19,195 +19,195 @@
     "lectures": [
         {
             "name": "Lecture 1",
-            "src": "/assets/data/subjects/oop/LectureX.pdf"
+            "src": "./assets/data/subjects/oop/LectureX.pdf"
         },
         {
             "name": "Lecture 2",
-            "src": "/assets/data/subjects/oop/LectureX.pdf"
+            "src": "./assets/data/subjects/oop/LectureX.pdf"
         },
         {
             "name": "Lecture 3",
-            "src": "/assets/data/subjects/oop/LectureX.pdf"
+            "src": "./assets/data/subjects/oop/LectureX.pdf"
         },
         {
             "name": "Lecture 4",
-            "src": "/assets/data/subjects/oop/LectureX.pdf"
+            "src": "./assets/data/subjects/oop/LectureX.pdf"
         },
         {
             "name": "Lecture 5",
-            "src": "/assets/data/subjects/oop/LectureX.pdf"
+            "src": "./assets/data/subjects/oop/LectureX.pdf"
         },
         {
             "name": "Lecture 6",
-            "src": "/assets/data/subjects/oop/LectureX.pdf"
+            "src": "./assets/data/subjects/oop/LectureX.pdf"
         },
         {
             "name": "Lecture 7",
-            "src": "/assets/data/subjects/oop/LectureX.pdf"
+            "src": "./assets/data/subjects/oop/LectureX.pdf"
         },
         {
             "name": "Lecture 8",
-            "src": "/assets/data/subjects/oop/LectureX.pdf"
+            "src": "./assets/data/subjects/oop/LectureX.pdf"
         },
         {
             "name": "Lecture 9",
-            "src": "/assets/data/subjects/oop/LectureX.pdf"
+            "src": "./assets/data/subjects/oop/LectureX.pdf"
         },
         {
             "name": "Lecture 10",
-            "src": "/assets/data/subjects/oop/LectureX.pdf"
+            "src": "./assets/data/subjects/oop/LectureX.pdf"
         },
         {
             "name": "Lecture 11",
-            "src": "/assets/data/subjects/oop/LectureX.pdf"
+            "src": "./assets/data/subjects/oop/LectureX.pdf"
         },
         {
             "name": "Lecture 12",
-            "src": "/assets/data/subjects/oop/LectureX.pdf"
+            "src": "./assets/data/subjects/oop/LectureX.pdf"
         },
         {
             "name": "Lecture 13",
-            "src": "/assets/data/subjects/oop/LectureX.pdf"
+            "src": "./assets/data/subjects/oop/LectureX.pdf"
         },
         {
             "name": "Lecture 14",
-            "src": "/assets/data/subjects/oop/LectureX.pdf"
+            "src": "./assets/data/subjects/oop/LectureX.pdf"
         }
     ],
     "seminars": [
         {
             "name": "Seminar 1",
-            "src": "/assets/data/subjects/oop/SeminarX.pdf",
+            "src": "./assets/data/subjects/oop/SeminarX.pdf",
             "resources": [
                 {
                     "name": "Resource_1",
-                    "src": "/assets/data/subjects/oop/SeminarX_Resource.zip"
+                    "src": "./assets/data/subjects/oop/SeminarX_Resource.zip"
                 },
                 {
                     "name": "Resource_2",
-                    "src": "/assets/data/subjects/oop/SeminarX_Resource.zip"
+                    "src": "./assets/data/subjects/oop/SeminarX_Resource.zip"
                 }
             ]
         },
         {
             "name": "Seminar 2",
-            "src": "/assets/data/subjects/oop/SeminarX.pdf",
+            "src": "./assets/data/subjects/oop/SeminarX.pdf",
             "resources": [
                 {
                     "name": "Resource_1",
-                    "src": "/assets/data/subjects/oop/SeminarX_Resource.zip"
+                    "src": "./assets/data/subjects/oop/SeminarX_Resource.zip"
                 }
             ]
         },
         {
             "name": "Seminar 3",
-            "src": "/assets/data/subjects/oop/SeminarX.pdf"
+            "src": "./assets/data/subjects/oop/SeminarX.pdf"
         },
         {
             "name": "Seminar 4",
-            "src": "/assets/data/subjects/oop/SeminarX.pdf"
+            "src": "./assets/data/subjects/oop/SeminarX.pdf"
         },
         {
             "name": "Seminar 5",
-            "src": "/assets/data/subjects/oop/SeminarX.pdf"
+            "src": "./assets/data/subjects/oop/SeminarX.pdf"
         },
         {
             "name": "Seminar 6",
-            "src": "/assets/data/subjects/oop/SeminarX.pdf"
+            "src": "./assets/data/subjects/oop/SeminarX.pdf"
         },
         {
             "name": "Seminar 7",
-            "src": "/assets/data/subjects/oop/SeminarX.pdf"
+            "src": "./assets/data/subjects/oop/SeminarX.pdf"
         }
     ],
     "laboratories": [
         {
             "name": "Laboratory 1",
-            "src": "/assets/data/subjects/oop/LaboratoryX.pdf",
+            "src": "./assets/data/subjects/oop/LaboratoryX.pdf",
             "resources": [
                 {
                     "name": "Resource_1",
-                    "src": "/assets/data/subjects/oop/LaboratoryX_Resource.zip"
+                    "src": "./assets/data/subjects/oop/LaboratoryX_Resource.zip"
                 },
                 {
                     "name": "Resource_2",
-                    "src": "/assets/data/subjects/oop/LaboratoryX_Resource.zip"
+                    "src": "./assets/data/subjects/oop/LaboratoryX_Resource.zip"
                 }
             ]
         },
         {
             "name": "Laboratory 2",
-            "src": "/assets/data/subjects/oop/LaboratoryX.pdf",
+            "src": "./assets/data/subjects/oop/LaboratoryX.pdf",
             "resources": [
                 {
                     "name": "Resource_1",
-                    "src": "/assets/data/subjects/oop/LaboratoryX_Resource.zip"
+                    "src": "./assets/data/subjects/oop/LaboratoryX_Resource.zip"
                 }
             ]
         },
         {
             "name": "Laboratory 3",
-            "src": "/assets/data/subjects/oop/LaboratoryX.pdf"
+            "src": "./assets/data/subjects/oop/LaboratoryX.pdf"
         },
         {
             "name": "Laboratory 4",
-            "src": "/assets/data/subjects/oop/LaboratoryX.pdf"
+            "src": "./assets/data/subjects/oop/LaboratoryX.pdf"
         },
         {
             "name": "Laboratory 5",
-            "src": "/assets/data/subjects/oop/LaboratoryX.pdf"
+            "src": "./assets/data/subjects/oop/LaboratoryX.pdf"
         },
         {
             "name": "Laboratory 6",
-            "src": "/assets/data/subjects/oop/LaboratoryX.pdf"
+            "src": "./assets/data/subjects/oop/LaboratoryX.pdf"
         },
         {
             "name": "Laboratory 7",
-            "src": "/assets/data/subjects/oop/LaboratoryX.pdf"
+            "src": "./assets/data/subjects/oop/LaboratoryX.pdf"
         },
         {
             "name": "Laboratory 8",
-            "src": "/assets/data/subjects/oop/LaboratoryX.pdf",
+            "src": "./assets/data/subjects/oop/LaboratoryX.pdf",
             "resources": [
                 {
                     "name": "Resource_1",
-                    "src": "/assets/data/subjects/oop/LaboratoryX_Resource.zip"
+                    "src": "./assets/data/subjects/oop/LaboratoryX_Resource.zip"
                 },
                 {
                     "name": "Resource_2",
-                    "src": "/assets/data/subjects/oop/LaboratoryX_Resource.zip"
+                    "src": "./assets/data/subjects/oop/LaboratoryX_Resource.zip"
                 }
             ]
         },
         {
             "name": "Laboratory 9",
-            "src": "/assets/data/subjects/oop/LaboratoryX.pdf",
+            "src": "./assets/data/subjects/oop/LaboratoryX.pdf",
             "resources": [
                 {
                     "name": "Resource_1",
-                    "src": "/assets/data/subjects/oop/LaboratoryX_Resource.zip"
+                    "src": "./assets/data/subjects/oop/LaboratoryX_Resource.zip"
                 }
             ]
         },
         {
             "name": "Laboratory 10",
-            "src": "/assets/data/subjects/oop/LaboratoryX.pdf"
+            "src": "./assets/data/subjects/oop/LaboratoryX.pdf"
         },
         {
             "name": "Laboratory 11",
-            "src": "/assets/data/subjects/oop/LaboratoryX.pdf"
+            "src": "./assets/data/subjects/oop/LaboratoryX.pdf"
         },
         {
             "name": "Laboratory 12",
-            "src": "/assets/data/subjects/oop/LaboratoryX.pdf"
+            "src": "../assets/data/subjects/oop/LaboratoryX.pdf"
         },
         {
             "name": "Laboratory 13",
-            "src": "/assets/data/subjects/oop/LaboratoryX.pdf"
+            "src": "../assets/data/subjects/oop/LaboratoryX.pdf"
         },
         {
             "name": "Laboratory 14",
-            "src": "/assets/data/subjects/oop/LaboratoryX.pdf"
+            "src": "../assets/data/subjects/oop/LaboratoryX.pdf"
         }
     ],
     "exams": [

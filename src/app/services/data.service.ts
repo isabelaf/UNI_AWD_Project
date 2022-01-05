@@ -12,14 +12,14 @@ export class DataService {
   }
 
   getDetails(): Observable<Details> {
-    return this.httpClient.get<Details>('assets/data/details.json');
+    return this.httpClient.get<Details>('./assets/data/details.json');
   }
 
   getAnnouncements(): Observable<Announcement[]> {
-    return this.httpClient.get<Announcement[]>('assets/data/announcements.json');
+    return this.httpClient.get<Announcement[]>('./assets/data/announcements.json');
   }
 
   getSubject(code: string): Observable<Subject> {
-    return this.httpClient.get<Subject>('assets/data/subjects/subject-' + code + '.json');
+    return this.httpClient.get<Subject>('./assets/data/subjects/subject-' + code + '.json');
   }
 }
