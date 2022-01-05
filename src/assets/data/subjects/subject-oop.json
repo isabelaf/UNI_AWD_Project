@@ -199,15 +199,15 @@
         },
         {
             "name": "Laboratory 12",
-            "src": "../assets/data/subjects/oop/LaboratoryX.pdf"
+            "src": "./assets/data/subjects/oop/LaboratoryX.pdf"
         },
         {
             "name": "Laboratory 13",
-            "src": "../assets/data/subjects/oop/LaboratoryX.pdf"
+            "src": "./assets/data/subjects/oop/LaboratoryX.pdf"
         },
         {
             "name": "Laboratory 14",
-            "src": "../assets/data/subjects/oop/LaboratoryX.pdf"
+            "src": "./assets/data/subjects/oop/LaboratoryX.pdf"
         }
     ],
     "exams": [
