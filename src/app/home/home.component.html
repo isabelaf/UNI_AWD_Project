@@ -1,14 +1,48 @@
-<div class="row">
-    <div class="col-12">
-        <div>
-            <h1>Announcements</h1>
-            <div *ngFor="let announcement of announcements" class="card">
-                <div class="card-body">
-                    <h5 class="card-title">{{announcement.title}}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">{{announcement.date | date : 'EEEE, MMMM d, y - HH:mm'}}
-                    </h6>
-                    <div class="card-text">
-                        <div [innerHtml]="announcement.text"></div>
+<div class="row align-items-center">
+    <div class="col-md-5 col-12">
+        <div class="px-3 pb-3">
+            <img class="img-fluid" src="./assets/images/photo-home-page.png">
+        </div>
+    </div>
+    <div class="col-md-7 col-12">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div>
+                                <h5 class="card-title text-bold">Isabela-Alexandra Fitero</h5>
+                                <div class="card-text">
+                                    Lecturer | Department of Computer Science<br />
+                                    Babes-Bolyai University
+                                </div>
+                                <div class="card-subtitle mt-1 text-muted">Cluj-Napoca, Romania</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-text">
+                            Hello!<br />
+                            Name's Isabela, and I am currently a Lecturer at BBU of Cluj-Napoca, and also a full-stack
+                            software
+                            developer.<br />
+                            <br />
+                            Besides computer science, my hobbies include cleaning and organazing stuff (yes, really!),
+                            gardening,
+                            and I've also recently developed an interest for baking (but I am still learning).
+                            I am a cat person, and I love chilly and cloudy weather.<br />
+                            <br />
+                            This is my university teacher webpage. Here I will post useful information for my students
+                            regarding
+                            the
+                            subjects that I teach.
+                        </div>
                     </div>
                 </div>
             </div>

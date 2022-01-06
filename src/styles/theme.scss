@@ -1,5 +1,6 @@
 body {
     background-color: $theme-color-light;
+    background-image: url($image-background);
 }
 
 .link {
@@ -76,19 +77,24 @@ ul {
     @extend .pt-5;
 
     min-height: 85vh;
+    background-color: $theme-color-light;
     color: $theme-text-dark;
 }
 
 .footer-theme {
-    @extend .mb-5;
+    @extend .pt-5;
+    @extend .pb-5;
     @extend .px-2;
 
     text-align: center;
     width: 100%;
     bottom: 0;
+    background-color: $theme-color-light;
 
-    hr {
-        background-color: $theme-color-dark;
+    .footer-separator {
+        @extend .pb-3;
+        width: 100%;
+        border-top: 1px solid $theme-color-dark;
     }
 }
 

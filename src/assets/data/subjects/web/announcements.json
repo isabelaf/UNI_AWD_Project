@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Welcome!",
+        "date": "2021-10-01T06:00:00Z",
+        "text": "Welcome to the Web Programming webpage!"
+    },
+    {
+        "title": "Join MSTeams",
+        "date": "2021-10-01T10:00:00Z",
+        "text": "Please join the Web Programming team on MSTeams (code: <a href=\"https://teams.microsoft.com/\" target=\"_blank\">webmst5</a>)."
+    }
+]

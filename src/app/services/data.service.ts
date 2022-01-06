@@ -20,8 +20,8 @@ export class DataService {
     return this.httpClient.get<About>('./assets/data/about.json');
   }
 
-  getAnnouncements(): Observable<Announcement[]> {
-    return this.httpClient.get<Announcement[]>('./assets/data/announcements.json');
+  getAnnouncements(subjectCode: string): Observable<Announcement[]> {
+    return this.httpClient.get<Announcement[]>('./assets/data/subjects/' + subjectCode + '/announcements.json');
   }
 
   getSubject(code: string): Observable<Subject> {

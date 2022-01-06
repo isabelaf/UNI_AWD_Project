@@ -17,6 +17,10 @@
     align-items: center;
 }
 
+.unclickable {
+    cursor: default !important;
+}
+
 .text-bold {
     font-weight: 600;
 }
