@@ -1,78 +1,65 @@
 <div class="row">
-	<div class="col-sm-6 col-12">
+    <div class="col-sm-5 col-12">
 		<div class="px-3 pb-3">
-			<img class="img-fluid" src="./assets/data/photo.JPG">
+			<img class="img-fluid" src="./assets/images/photo-self.JPG">
 		</div>
 	</div>
-
-	<div class="col-sm-6 col-12" *ngIf="details.about && details.contact">
-		<div id="details-accordion">
+    <div class="col-sm-7 col-12">
+        <div id="accordionAbout">
 			<div class="card card-theme">
-				<div class="card-header card-header-theme" id="about">
+				<div class="card-header card-header-theme" id="cardWorkExp">
 					<h5 class="mb-0">
-						<button class="btn-theme" data-toggle="collapse" data-target="#collapseAbout"
-							aria-expanded="true" aria-controls="collapseAbout">
-							About
+						<button class="btn-theme" data-toggle="collapse" data-target="#collapseWorkExp"
+							aria-expanded="false" aria-controls="collapseWorkExp">
+							<i class="fas fa-user-tie icon-in-text"></i>Work experience
 						</button>
 					</h5>
 				</div>
-				<div id="collapseAbout" class="collapse show" aria-labelledby="about" data-parent="#details-accordion">
+				<div id="collapseWorkExp" class="collapse" aria-labelledby="cardWorkExp" data-parent="#accordionAbout">
 					<div class="card-body card-body-theme">
-						<div><span class="text-bold">Name: </span>{{details.about.name}}</div>
-						<div>
-							<span class="text-bold">Occupations: </span>
-							<ul>
-								<li *ngFor="let o of details.about.occupations">{{o}}</li>
-							</ul>
-						</div>
-						<div>
-							<span class="text-bold">CV: </span>
-							<span>
-								<a href="/portofolio">
-									<i class="fas fa-external-link-alt social-media-icon"></i>
-								</a>
-							</span>
-						</div>
-						<br />
-						<div [innerHtml]="details.about.text"></div>
+						<div *ngFor="let we of about.workExperience" class="card">
+                            <div class="card-body">
+                                <h6 class="card-title text-bold text-info">{{we.role}}</h6>
+                                <p class="card-subtitle"><span class="text-bold">{{we.companyName}} </span><span class="font-italic">[{{we.startPeriod | date : AppConstants.dateFormat}} - {{we.endPeriod ? (we.endPeriod | date : AppConstants.dateFormat) : 'Current'}}]</span></p>
+                                <p class="card-subtitle text-muted mt-1">{{we.city}}, {{we.country}}</p>
+                            </div>
+                        </div>
 					</div>
 				</div>
 			</div>
-			<div class="card card-theme">
-				<div class="card-header card-header-theme" id="contact">
+            <div class="card card-theme">
+				<div class="card-header card-header-theme" id="cardEducation">
 					<h5 class="mb-0">
-						<button class="btn-theme" data-toggle="collapse" data-target="#collapseContact"
-							aria-expanded="false" aria-controls="collapseContact">
-							Contact
+						<button class="btn-theme" data-toggle="collapse" data-target="#collapseEducation"
+							aria-expanded="false" aria-controls="collapseEducation">
+							<i class="fas fa-user-graduate icon-in-text"></i>Education
 						</button>
 					</h5>
 				</div>
-				<div id="collapseContact" class="collapse" aria-labelledby="contact" data-parent="#details-accordion">
+				<div id="collapseEducation" class="collapse" aria-labelledby="cardEducation" data-parent="#accordionAbout">
 					<div class="card-body card-body-theme">
-						<div>
-							<i class="fas fa-envelope social-media-icon" data-toggle="tooltip" title="Email"></i>
-							{{details.contact.email}}
-						</div>
-						<div>
-							<a target="_blank" href="{{details.contact.officeAddress.link}}"
-								class="text-decoration-none">
-								<i class="fas fa-map-marker-alt map-pin"></i>
-							</a>
-							{{details.contact.officeAddress.label}}
-						</div>
-						<br />
-						You can find me on:<br />
-						<a *ngFor="let sm of details.contact.socialMedia" target="_blank" href="{{sm.url}}"
-							class="text-decoration-none">
-							<i class="{{sm.iconClass}} social-media-icon" data-toggle="tooltip"
-								title="{{sm.tooltip}}"></i>
-						</a>
-						<br />
-						You can also find me here:<br />
-						<a *ngFor="let a of details.contact.address" target="_blank" href="{{a}}"
-							class="text-decoration-none">
-							<i class="fas fa-map-marker-alt map-pin"></i>
-						</a>
+						<div *ngFor="let e of about.education" class="card">
+                            <div class="card-body">
+                                <h6 class="card-title text-bold text-info">{{e.degree}}</h6>
+                                <p class="card-subtitle"><span class="text-bold">{{e.institutionName}} </span><span class="font-italic">[{{e.startYear}} - {{e.endYear ? e.endYear : 'Current'}}]</span></p>
+                                <p class="card-subtitle text-muted mt-1">{{e.city}}, {{e.country}}</p>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+            <div class="card card-theme">
+				<div class="card-header card-header-theme" id="cardProgrammingBg">
+					<h5 class="mb-0">
+						<button class="btn-theme" data-toggle="collapse" data-target="#collapseProgrammingBg"
+							aria-expanded="false" aria-controls="collapseProgrammingBg">
+							<i class="fas fa-laptop-code icon-in-text"></i>Programming background
+						</button>
+					</h5>
+				</div>
+				<div id="collapseProgrammingBg" class="collapse" aria-labelledby="cardProgrammingBg" data-parent="#accordionAbout">
+					<div class="card-body card-body-theme">
+                        <div [innerHtml]="about.programmingBackground"></div>
 					</div>
 				</div>
 			</div>

@@ -1,4 +1,4 @@
-app-about {
+app-contact {
     .contact-icon {
         color: $theme-color-dark;
     }
@@ -20,26 +20,6 @@ app-about {
     @media (hover: hover) {
         .map-pin:hover {
             transform: rotate(360deg);
-        }
-    }
-}
-
-app-portofolio {
-    .pdf-viewer-container {
-        max-height: 90vh;
-        overflow-y: auto;
-        width: 70%;
-        margin-left: 15%;
-    }
-
-    pdf-viewer {
-        display: block;
-    }
-
-    @include media-breakpoint-down(lg) {
-        .pdf-viewer-container {
-            width: 100%;
-            margin-left: 0;
         }
     }
 }

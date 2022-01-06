@@ -1,28 +1,17 @@
-export class DetailsAbout {
-  name: string;
-  occupations: string[];
-  text: string;
-}
-
-export class DetailsSocialMedia {
+export class ContactSocialMedia {
   url: string;
   iconClass: string;
   tooltip: string;
 }
 
-export class DetailsOfficeAddress {
+export class ContactOfficeAddress {
   label: string;
   link: string;
 }
 
-export class DetailsContact {
+export class Contact {
   email: string;
-  socialMedia: DetailsSocialMedia[];
-  officeAddress: DetailsOfficeAddress;
+  socialMedia: ContactSocialMedia[];
+  officeAddress: ContactOfficeAddress;
   address: string[];
-}
-
-export class Details {
-  about: DetailsAbout;
-  contact: DetailsContact;
 }

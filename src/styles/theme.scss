@@ -121,6 +121,7 @@ ul {
     background-color: $theme-color-dark;
 
     .btn-theme {
+        @extend .align-items-center;
         color: $theme-text-light;
     }
 }

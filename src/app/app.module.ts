@@ -14,9 +14,9 @@ import { EmptyPageComponent } from './empty-page/empty-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
-import { PortofolioComponent } from './portofolio/portofolio.component';
 import { HomeComponent } from './home/home.component';
 import { TeachingSubjectComponent } from './teaching-subject/teaching-subject.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +26,8 @@ import { TeachingSubjectComponent } from './teaching-subject/teaching-subject.co
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    PortofolioComponent,
-    TeachingSubjectComponent
+    TeachingSubjectComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

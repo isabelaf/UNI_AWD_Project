@@ -17,7 +17,7 @@ export class NavbarComponent implements OnInit {
       },
       {
         path: '/about',
-        name: 'About & contact'
+        name: 'About'
       },
       {
         name: 'Teaching',
@@ -31,6 +31,10 @@ export class NavbarComponent implements OnInit {
             name: 'Web Programming'
           }
         ]
+      },
+      {
+        path: '/contact',
+        name: 'Contact'
       }
     ];
   }

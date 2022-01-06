@@ -12,6 +12,11 @@
     @extend .m-2;
 }
 
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
 .text-bold {
     font-weight: 600;
 }

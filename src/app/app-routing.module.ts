@@ -3,9 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { EmptyPageComponent } from './empty-page/empty-page.component';
 import { AboutComponent } from './about/about.component';
-import { PortofolioComponent } from './portofolio/portofolio.component';
 import { HomeComponent } from './home/home.component';
 import { TeachingSubjectComponent } from './teaching-subject/teaching-subject.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {
@@ -24,9 +24,9 @@ const routes: Routes = [
     data: { title: 'About' }
   },
   {
-    path: 'portofolio',
-    component: PortofolioComponent,
-    data: { title: 'Portofolio' }
+    path: 'contact',
+    component: ContactComponent,
+    data: { title: 'Contact' }
   },
   {
     path: 'subject/:code',

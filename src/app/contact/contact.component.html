@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-sm-5 col-12">
+        <div class="px-3 pb-3">
+            <img class="img-fluid" src="./assets/images/photo-contact-page.png">
+        </div>
+    </div>
+    <div class="col-sm-7 col-12">
+        <div id="accordionContact">
+            <div class="card card-theme">
+                <div class="card-header card-header-theme" id="cardContact">
+                    <h5 class="mb-0">
+                        <button class="btn-theme">
+							<i class="fas fa-comment icon-in-text"></i>Contact
+						</button>
+                    </h5>
+                </div>
+                <div class="show">
+                    <div class="card-body card-body-theme">
+                        <div class="align-items-center">
+                            <i class="fas fa-envelope social-media-icon" data-toggle="tooltip" title="Email"></i>
+                            {{contact.email}}
+                        </div>
+                        <div class="align-items-center">
+                            <a target="_blank" href="{{contact.officeAddress.link}}"
+                                class="text-decoration-none">
+                                <i class="fas fa-map-marker-alt map-pin"></i>
+                            </a>
+                            {{contact.officeAddress.label}}
+                        </div>
+                        <br />
+                        You can find me on:<br />
+                        <a *ngFor="let sm of contact.socialMedia" target="_blank" href="{{sm.url}}"
+                            class="text-decoration-none">
+                            <i class="{{sm.iconClass}} social-media-icon" data-toggle="tooltip"
+                                title="{{sm.tooltip}}"></i>
+                        </a>
+                        <br />
+                        You can also find me here:<br />
+                        <a *ngFor="let a of contact.address" target="_blank" href="{{a}}"
+                            class="text-decoration-none">
+                            <i class="fas fa-map-marker-alt map-pin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

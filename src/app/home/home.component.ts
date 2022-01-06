@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.dataService.getAnnouncements().subscribe(
       announcements => {
-        this.announcements = announcements;
+        this.announcements = announcements.sort((a1, a2) => a1.date.getTime() - a2.date.getTime());
       }
     );
   }

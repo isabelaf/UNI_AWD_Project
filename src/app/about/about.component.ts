@@ -1,21 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 
 import { DataService } from '../services/data.service';
-import { Details } from '../models/details.model';
+import { AppConstants } from '../app.constants';
+import { About } from '../models/about.model';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html'
 })
 export class AboutComponent implements OnInit {
-  details: Details = new Details();
+  AppConstants = AppConstants;
+
+  about: About = new About();
 
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.dataService.getDetails().subscribe(
-      details => {
-        this.details = details;
+    this.dataService.getAbout().subscribe(
+      about => {
+        this.about = about;
       }
     );
   }
