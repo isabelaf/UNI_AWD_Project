@@ -101,7 +101,7 @@ ul {
 .btn-theme {
     @extend .btn;
 
-    min-width: $font-size-base * 2.5;
+    width: 100%;
 
     &:focus {
         outline: none;
