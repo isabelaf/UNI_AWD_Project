@@ -1,15 +1,13 @@
 $font-family-base: 'Source Sans Pro', sans-serif;
 $font-size-base: 1.15rem;
 
-// Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Source+Sans+Pro&display=swap');
-
 // Font Awesome
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 
 // Bootstrap
 @import "~bootstrap/scss/bootstrap.scss";
 
+@import "./fonts";
 @import "./variables";
 @import "./functions";
 @import "./colors";

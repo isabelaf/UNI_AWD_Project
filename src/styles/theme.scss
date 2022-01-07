@@ -1,6 +1,6 @@
 body {
     background-color: $theme-color-light;
-    background-image: url('../assets/images/photo-background.png');
+    background-image: url("../assets/images/photo-background.png");
 }
 
 .link {
@@ -32,7 +32,7 @@ ul {
 
     .navbar-brand {
         font-size: $font-size-ex-lg;
-        font-family: 'Dancing Script', cursive;
+        font-family: "Dancing Script", cursive;
         color: $navbar-theme-brand;
 
         &:hover {
@@ -101,8 +101,6 @@ ul {
 .btn-theme {
     @extend .btn;
 
-    width: 100%;
-
     &:focus {
         outline: none;
         box-shadow: none;
@@ -128,7 +126,26 @@ ul {
 
     .btn-theme {
         @extend .align-items-center;
+        width: 100%;
         color: $theme-text-light;
+    }
+
+    h5 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button:not(.unclickable)::after {
+            @extend .ml-3;
+            font-family: "Font Awesome";
+            content: "\f107";
+        }
+
+        button:not(.unclickable)[aria-expanded="true"]::after {
+            @extend .ml-3;
+            font-family: "Font Awesome";
+            content: "\f106";
+        }
     }
 }
 
