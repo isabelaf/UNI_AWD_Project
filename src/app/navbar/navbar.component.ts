@@ -23,11 +23,13 @@ export class NavbarComponent implements OnInit {
         map(event => (event as NavigationEnd).url)
       )
       .subscribe(path => {
-        this.activeParentElementName = this.navElements.filter(e => e.children).find(e => e.children.find(c => c.path && c.path === path))?.name;
+        this.activeParentElementName = this.navElements
+        .filter(e => e.children)
+        .find(e => e.children.find(c => c.path && c.path === path))?.name;
       });
   }
 
-  private initNavElements() {
+  private initNavElements(): void {
     this.navElements = [
       {
         path: '/home',

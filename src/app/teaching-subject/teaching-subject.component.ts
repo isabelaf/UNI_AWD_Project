@@ -26,8 +26,9 @@ export class TeachingSubjectComponent implements OnInit {
 
   private init(subjectCode: string): void {
     const annountcementsToggle = document.getElementById('buttonAnnouncementsToggle');
-    if (annountcementsToggle.attributes.getNamedItem('aria-expanded').value === 'false')
-    annountcementsToggle.click();
+    if (annountcementsToggle.attributes.getNamedItem('aria-expanded').value === 'false') {
+      annountcementsToggle.click();
+    }
 
     this.dataService.getSubject(subjectCode).subscribe(
       subject => {
