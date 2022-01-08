@@ -1,13 +1,21 @@
 {
     "workExperience": [
         {
+            "role": "Lecturer (Computer Science Department)",
+            "companyName": "Babes-Bolyai University",
+            "startPeriod": "2021-09-30T22:00:00Z",
+            "endPeriod": null,
+            "city": "Cluj-Napoca",
+            "country": "Romania"
+        },
+        {
             "role": "Full-Stack Software Developer",
             "companyName": "Qubiz",
             "startPeriod": "2019-02-10T22:00:00Z",
             "endPeriod": null,
             "city": "Cluj-Napoca",
             "country": "Romania"
-          }
+        }
     ],
     "education": [
         {
@@ -17,23 +25,23 @@
             "endYear": null,
             "city": "Cluj-Napoca",
             "country": "Romania"
-          },
-          {
+        },
+        {
             "degree": "Bachelor's degree (Computer Science - English)",
             "institutionName": "Babes-Bolyai University, Faculty of Mathematics and Computer Science",
             "startYear": 2017,
             "endYear": 2020,
             "city": "Cluj-Napoca",
             "country": "Romania"
-          },
-          {
+        },
+        {
             "degree": "Baccalaureate diploma (Mathematics & Computer Science)",
             "institutionName": "\"Mihai Eminescu\" National College",
             "startYear": 2013,
             "endYear": 2017,
             "city": "Oradea",
             "country": "Romania"
-          }
+        }
     ],
     "programmingBackground": "<div><p class=\"text-bold\">Currently working with:</p><ul><li>C#, ASP.NET, AngularJS on a web application</li><li>Ionic (AngularJS & Apache Cordova) on a mobile application</li></ul></div><div><p class=\"text-bold\">Studied during BCs:</p><ul><li>Unity (C#)</li><li>Java, C++, Python</li><li>briefly studied (basic knowledge): Qt (C++), Xamarin</li></ul></div><div><p class=\"text-bold\">Studied on my own:</p><ul><li>HTML, CSS & JavaScript</li><li>briefly studied (basic knowledge): Angular2+, SCSS</li></ul></div>"
 }

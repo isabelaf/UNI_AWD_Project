@@ -131,10 +131,6 @@ ul {
     }
 
     h5 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
         button:not(.unclickable)::after {
             @extend .ml-3;
             font-family: "Font Awesome";

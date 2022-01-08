@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-5 col-12">
         <div class="px-3 pb-3">
-            <img class="img-fluid" src="./assets/images/photo-contact-page.png">
+            <img class="img-fluid" src="./assets/images/photo-contact-page.png" alt="contact-photo">
         </div>
     </div>
     <div class="col-md-7 col-12">
@@ -17,11 +17,12 @@
                 <div class="show">
                     <div class="card-body card-body-theme">
                         <div class="align-items-center">
-                            <i class="fas fa-envelope social-media-icon" data-toggle="tooltip" title="Email"></i>
+                            <i class="fas fa-envelope social-media-icon" data-toggle="tooltip" title="email"></i>
                             {{contact.email}}
                         </div>
                         <div class="align-items-center">
                             <a target="_blank" href="{{contact.officeAddress.link}}"
+                                title="office-address"
                                 class="text-decoration-none">
                                 <i class="fas fa-map-marker-alt map-pin"></i>
                             </a>
@@ -37,7 +38,8 @@
                         <br />
                         You can also find me here:<br />
                         <a *ngFor="let a of contact.address" target="_blank" href="{{a}}"
-                            class="text-decoration-none">
+                            class="text-decoration-none"
+                            title="map-link">
                             <i class="fas fa-map-marker-alt map-pin"></i>
                         </a>
                     </div>
