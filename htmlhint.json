@@ -1,0 +1,25 @@
+{
+    "attr-lowercase": [
+        "*ngFor",
+        "*ngIf",
+        "[ngClass]",
+        "[routerLink]",
+        "[routerLinkActive]",
+        "routerLink",
+        "routerLinkActive",
+        "[innerHtml]"
+    ],
+    "attr-no-duplication": true,
+    "attr-no-unnecessary-whitespace": true,
+    "attr-value-double-quotes": true,
+    "tag-pair": true,
+    "tag-self-close": true,
+    "tagname-lowercase": true,
+    "src-not-empty": true,
+    "id-unique": true,
+    "inline-script-disabled": true,
+    "inline-style-disabled": true,
+    "space-tab-mixed-disabled": true,
+    "spec-char-escape": true,
+    "title-require": true
+}
