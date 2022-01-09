@@ -8,7 +8,7 @@ import { Contact } from '../models/details.model';
   templateUrl: './contact.component.html'
 })
 export class ContactComponent implements OnInit {
-  contact: Contact = new Contact();
+  contact?: Contact = null;
 
   constructor(private dataService: DataService) { }
 

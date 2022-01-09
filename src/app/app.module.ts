@@ -3,8 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
-import { PdfViewerModule } from 'ng2-pdf-viewer';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -33,8 +31,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     CommonModule,
     HttpClientModule,
-    AppRoutingModule,
-    PdfViewerModule
+    AppRoutingModule
   ],
   providers: [
     DataService

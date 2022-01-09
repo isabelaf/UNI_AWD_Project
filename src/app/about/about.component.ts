@@ -11,7 +11,7 @@ import { About } from '../models/about.model';
 export class AboutComponent implements OnInit {
   AppConstants = AppConstants;
 
-  about: About = new About();
+  about?: About = null;
 
   constructor(private dataService: DataService) { }
 

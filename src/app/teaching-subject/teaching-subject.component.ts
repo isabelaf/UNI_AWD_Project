@@ -12,7 +12,7 @@ import { Announcement } from '../models/announcement.model';
 })
 export class TeachingSubjectComponent implements OnInit {
   AppConstants = AppConstants;
-  subject: Subject = new Subject();
+  subject?: Subject = null;
   announcements: Announcement[] = [];
 
   constructor(private dataService: DataService, private route: ActivatedRoute) {
@@ -26,7 +26,7 @@ export class TeachingSubjectComponent implements OnInit {
 
   private init(subjectCode: string): void {
     const annountcementsToggle = document.getElementById('buttonAnnouncementsToggle');
-    if (annountcementsToggle.attributes.getNamedItem('aria-expanded').value === 'false') {
+    if (annountcementsToggle?.attributes.getNamedItem('aria-expanded').value === 'false') {
       annountcementsToggle.click();
     }
 
